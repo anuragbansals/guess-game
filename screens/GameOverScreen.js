@@ -9,9 +9,11 @@ const GameOverScreen = (props) => {
       <TitleText>The Game is Over!</TitleText>
       <View style={styles.imageContainer}>
         <Image
+            fadeDuration= {1000}
           resizeMode="cover"
           style={styles.image}
-          source={require("../assets/success.png")}
+        //   source={require("../assets/success.png")}
+          source={{uri: 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'}}
         />
       </View>
       <BodyText>Number of rounds: {props.roundsNumber}</BodyText>
